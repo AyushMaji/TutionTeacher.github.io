@@ -1,0 +1,660 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+   TeachPoint
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+  <!-- Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="../assets/css/material-dashboard.css" rel="stylesheet"/>
+   <!------- font awesome online plug --------------->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://use.fontawesome.com/f69956382f.js"></script>
+
+
+<style type="text/css">
+  
+      body {
+  padding-top: px;
+}
+.btn-grey{
+    background-color:#D8D8D8;
+  color:#FFF;
+}
+.rating-block{
+  background-color:#FAFAFA;
+  border:1px solid #EFEFEF;
+  padding:15px 15px 20px 15px;
+  border-radius:3px;
+}
+.bold{
+  font-weight:700;
+}
+.padding-bottom-7{
+  padding-bottom:7px;
+}
+
+.review-block{
+  background-color:#FAFAFA;
+  border:1px solid #EFEFEF;
+  padding:15px;
+  border-radius:3px;
+  margin-bottom:15px;
+}
+.review-block-name{
+  font-size:12px;
+  margin:10px 0;
+}
+.review-block-date{
+  font-size:12px;
+}
+.review-block-rate{
+  font-size:13px;
+  margin-bottom:15px;
+}
+.review-block-title{
+  font-size:15px;
+  font-weight:700;
+  margin-bottom:10px;
+}
+.review-block-description{
+  font-size:13px;
+
+}
+ .animated {
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
+    transition: height 0.2s;
+}
+
+.stars
+{
+    margin: 20px 0;
+    font-size: 24px;
+    color: #d17581;
+}
+    </style>
+</head>
+
+<body>
+
+  <!-- ---------------------------sidebar-------------------- -->
+
+  <div class="wrapper ">
+    <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+      <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
+          TeachPoint
+        </a></div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item  ">
+            <a class="nav-link" href="./dashboard.html">
+              <i class="material-icons">dashboard</i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="nav-item active ">
+            <a class="nav-link" href="./user.html">
+              <i class="material-icons">person</i>
+              <p>User Profile</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./tables.html">
+              <i class="material-icons">content_paste</i>
+              <p>Table List</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./chat.html">
+              <i class="material-icons">quickreply</i>
+              <p>Chat</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./post.html">
+              <i class="material-icons">bubble_chart</i>
+              <p>Post</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./search.html">
+              <i class="material-icons">search</i>
+              <p>Search</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./payment.html">
+              <i class="material-icons">account_balance</i>
+              <p>Payment</p>
+            </a>
+
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./notifications.html">
+              <i class="material-icons">notifications</i>
+              <p>Notifications</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+       <!-- ///////////////////////sidebAR////////////////////////// -->
+
+
+   <!-- ---------------------------topnavbar------------------------ -->
+
+    <div class="main-panel ay ubg">
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand" href="javascript:;">PROFILE</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <form class="navbar-form">
+              <div class="input-group no-border">
+                <input type="text" value="" class="form-control" placeholder="Search...">
+                <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                  <i class="material-icons">search</i>
+                  <div class="ripple-container"></div>
+                </button>
+              </div>
+            </form>
+            <ul class="navbar-nav">
+             
+              <!-- (in future add any iteam.bt plz do not dlt) -->
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+     <!-- ////////////////////////topnavbar////////////////////// -->
+
+
+
+
+
+
+      <div class="content">
+        <div class=" ">
+          <div class="row">
+
+            <!-- ----------------------------box1------------------------ -->
+
+              <div class="col-md-4">
+              <div class="card card-profile">
+                <div class="card-avatar">
+                  <a href="javascript:;">
+                    <img class="img" src="../assets/img/faces/marc.jpg" />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-category text-gray">CEO / Co-Founder</h6>
+                  <h4 class="card-title">Alec Thompson</h4>
+                  <p class="card-description">
+                    Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+                  </p>
+                  <a href="javascript:;" class="btn btn-primary btn-round">Follow</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- /////////////////////////////box1///////////////////////// -->
+
+
+
+
+           <!-- ---------------------------box-2------------------------- -->
+
+            <div class="col-md-8">
+
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title">Edit Profile</h4>
+                  <p class="card-category">Complete your profile</p>
+                </div>
+                <div class="card-body">
+                   
+                 <div class="row">
+                   
+                   <div class="card container" style="width:100%">
+            
+                     <div class="card-body">
+              
+                   
+                <!-- ------------------details------------------ -->
+                 <div class="address">  
+                 <address>             
+                 <ul class="w3-ul">
+                  <li> <i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;teachpoint2722001@gmail.com </li>
+                  <li><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;9749003015</li>
+                  <li><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;28 </li>
+                  <li><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;batch & private</li>
+                  <li><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;Hired by #100 people </li>
+                 </ul>
+                </address>
+
+                <!-- //////////////////////details///////////////// -->
+
+
+
+                <!-- -------------------------msg------------------- -->
+               <p><button class="w3-button w3-block w3-indigo btn btn-primary btn-round"   data-toggle="tooltip" data-placement="top" title="Free to message and hire us"> <i class="fa fa-comment-o fa-lg"></i> Hire me </button></p>
+              </div>
+
+              <!-- ////////////////////////////msg////////////////// -->
+              
+
+
+              <!-- ---------------------------subject---------------- -->
+
+                <ul class="w3-ul w3-small">
+                  <li><a href="" > class </a> <span class="ml-5"> &nbsp;&nbsp;Sub</span></li>
+                  <li><a href="">9 </a><span class="ml-5"> &nbsp;&nbsp;biology,all subject</span></li>
+                  <li><a href="">12 </a><span class="ml-5"> &nbsp;&nbsp;History</span></li>
+                   <li><a href="">11 </a><span class="ml-5"> &nbsp;&nbsp;bengali</span></li>
+                   <li><a href="">8 </a><span class="ml-5"> &nbsp;&nbsp;math</span></li>
+                   <li><a href="">11 </a><span class="ml-5"> &nbsp;&nbsp;bengali</span></li>
+                </ul>
+               
+              <hr>
+
+              <!-- /////////////////////////////subject////////////////// -->
+
+          
+
+
+
+    <div class=" ">
+
+    <!-- ----------------------------- Ratting------------------------- -->
+    <div class="row">
+
+      <div class="col-lg-12">
+        <div class="rating-block">
+          <h4>Average user rating</h4>
+          <h2 class="bold padding-bottom-7">4.3 <small>/ 5</small></h2>
+          <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>        
+    </div>   
+
+      <!-- ////////////////////////////////Ratting///////////////////// -->
+
+
+
+
+
+
+
+         <div class="row">
+         
+          <hr/>
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="http://dummyimage.com/60x60/666/ffffff&text=No+Image" class="img-rounded">
+              <div class="review-block-name"><a href="#">nktailor</a></div>
+            </div>
+            <div class="col-sm-9">
+              <div class="review-block-rate">
+                  <span class="glyphicon glyphicon-star" aria-hidden="true">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                   </span> 
+                   <span class="glyphicon glyphicon-star" aria-hidden="true">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                   </span> 
+                   <span class="glyphicon glyphicon-star" aria-hidden="true">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </span>
+                
+              </div>
+              <div class="review-block-title">this was nice in buy</div>
+              <div class="review-block-description">this was nice in buy. this was nice in buy. this was nice in buy. this was nice in buy this was nice in buy this was nice in buy this was nice in buy this was nice in buy</div>
+            </div>
+          </div>
+          <hr/>
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="http://dummyimage.com/60x60/666/ffffff&text=No+Image" class="img-rounded">
+              <div class="review-block-name"><a href="#">nktailor</a></div>
+              
+            </div>
+            <div class="col-sm-9">
+              <div class="review-block-rate">
+                <span class="glyphicon glyphicon-star" aria-hidden="true">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                   </span> 
+                   <span class="glyphicon glyphicon-star" aria-hidden="true">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                   </span> 
+                   <span class="glyphicon glyphicon-star" aria-hidden="true">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </span>
+              </div>
+              <div class="review-block-title">this was nice in buy</div>
+              <div class="review-block-description">this was nice in buy. this was nice in buy. this was nice in buy. this was nice in buy this was nice in buy this was nice in buy this was nice in buy this was nice in buy</div>
+            </div>
+          </div>
+        </hr>
+        <button class="btn btn-success btn-sm  container mt-4" type="submit">More</button>
+
+        </div>
+      </div>
+    </div>
+    </div> <!-- /container -->
+     </div>
+             
+        
+
+
+
+
+              <div class="socials">
+                <p class="lower-case">  Follow us</p>
+              <ul class="list-inline container m-4" >
+                <button class="w3-button w3-blue"><i class="fa fa-facebook"></i></button>
+                <button class="w3-button w3-yellow"><i class="fa fa-twitter"></i></button>
+                <button class="w3-button w3-red"><i class="fa fa-youtube"></i></button>
+                <button class="w3-button w3-orange"><i class="fa fa-google"></i></button>
+                <button class="w3-button w3-gray"><i class="fa fa-instagram"></i></button>
+              </ul>
+              </div>
+              
+             
+              
+              <hr>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123405.88854614287!2d120.60617944332368!3d14.856990020414184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33965af30887de57%3A0x1aa8d246509d51e5!2sMacabebe%2C+Pampanga!5e0!3m2!1sen!2sph!4v1514036434857" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+              
+              <hr>
+              
+            </div>
+            </div>
+                
+                </div>
+              </div>
+            </div>
+
+            <!-- ///////////////////box-2///////////////////////////////// -->
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+
+  <div class="fixed-plugin col-10">
+    <div class="dropdown show-dropdown">
+      <a href="#" data-toggle="dropdown">
+         <i class="fa fa-cog fa-spin fa-2x fa-fw"></i>
+          <span class="sr-only">Loading...</span>
+      </a>
+      <ul class="dropdown-menu container">
+        <li class="header-title"> Sidebar Filters</li>
+        <li class="adjustments-line">
+          <a href="javascript:void(0)" class="switch-trigger active-color">
+            <div class="badge-colors ml-auto mr-auto">
+              <span class="badge filter badge-purple" data-color="purple"></span>
+              <span class="badge filter badge-azure" data-color="azure"></span>
+              <span class="badge filter badge-green" data-color="green"></span>
+              <span class="badge filter badge-warning" data-color="orange"></span>
+              <span class="badge filter badge-danger" data-color="danger"></span>
+              <span class="badge filter badge-rose active" data-color="rose"></span>
+            </div>
+            <div class="clearfix"></div>
+          </a>
+        </li>
+        <li class="header-title">Images</li>
+        <li class="active">
+          <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="../assets/img/sidebar-1.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="../assets/img/sidebar-2.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="../assets/img/sidebar-3.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="../assets/img/sidebar-4.jpg" alt="">
+          </a>
+        </li>
+        <li class="button-container">
+          <a href=" "arget="_blank" class="btn btn-default btn-block">Find Teacher</a>
+        </li>
+   
+        <li class="button-container">
+          <a href=" " target="_blank" class="btn btn-default btn-block">
+            Find Student
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap-material-design.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+  <script src="../assets/js/material-dashboard.js?v=2.1.2" type="text/javascript"></script>
+  <script>
+    $(document).ready(function() {
+      $().ready(function() {
+        $sidebar = $('.sidebar');
+
+        $sidebar_img_container = $sidebar.find('.sidebar-background');
+
+        $full_page = $('.full-page');
+
+        $sidebar_responsive = $('body > .navbar-collapse');
+
+        window_width = $(window).width();
+
+        fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
+
+        if (window_width > 767 && fixed_plugin_open == 'Dashboard') {
+          if ($('.fixed-plugin .dropdown').hasClass('show-dropdown')) {
+            $('.fixed-plugin .dropdown').addClass('open');
+          }
+
+        }
+
+        $('.fixed-plugin a').click(function(event) {
+          // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
+          if ($(this).hasClass('switch-trigger')) {
+            if (event.stopPropagation) {
+              event.stopPropagation();
+            } else if (window.event) {
+              window.event.cancelBubble = true;
+            }
+          }
+        });
+
+        $('.fixed-plugin .active-color span').click(function() {
+          $full_page_background = $('.full-page-background');
+
+          $(this).siblings().removeClass('active');
+          $(this).addClass('active');
+
+          var new_color = $(this).data('color');
+
+          if ($sidebar.length != 0) {
+            $sidebar.attr('data-color', new_color);
+          }
+
+          if ($full_page.length != 0) {
+            $full_page.attr('filter-color', new_color);
+          }
+
+          if ($sidebar_responsive.length != 0) {
+            $sidebar_responsive.attr('data-color', new_color);
+          }
+        });
+
+        $('.fixed-plugin .background-color .badge').click(function() {
+          $(this).siblings().removeClass('active');
+          $(this).addClass('active');
+
+          var new_color = $(this).data('background-color');
+
+          if ($sidebar.length != 0) {
+            $sidebar.attr('data-background-color', new_color);
+          }
+        });
+
+        $('.fixed-plugin .img-holder').click(function() {
+          $full_page_background = $('.full-page-background');
+
+          $(this).parent('li').siblings().removeClass('active');
+          $(this).parent('li').addClass('active');
+
+
+          var new_image = $(this).find("img").attr('src');
+
+          if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+            $sidebar_img_container.fadeOut('fast', function() {
+              $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+              $sidebar_img_container.fadeIn('fast');
+            });
+          }
+
+          if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+            var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+
+            $full_page_background.fadeOut('fast', function() {
+              $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+              $full_page_background.fadeIn('fast');
+            });
+          }
+
+          if ($('.switch-sidebar-image input:checked').length == 0) {
+            var new_image = $('.fixed-plugin li.active .img-holder').find("img").attr('src');
+            var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+
+            $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+            $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+          }
+
+          if ($sidebar_responsive.length != 0) {
+            $sidebar_responsive.css('background-image', 'url("' + new_image + '")');
+          }
+        });
+
+        $('.switch-sidebar-image input').change(function() {
+          $full_page_background = $('.full-page-background');
+
+          $input = $(this);
+
+          if ($input.is(':checked')) {
+            if ($sidebar_img_container.length != 0) {
+              $sidebar_img_container.fadeIn('fast');
+              $sidebar.attr('data-image', '#');
+            }
+
+            if ($full_page_background.length != 0) {
+              $full_page_background.fadeIn('fast');
+              $full_page.attr('data-image', '#');
+            }
+
+            background_image = true;
+          } else {
+            if ($sidebar_img_container.length != 0) {
+              $sidebar.removeAttr('data-image');
+              $sidebar_img_container.fadeOut('fast');
+            }
+
+            if ($full_page_background.length != 0) {
+              $full_page.removeAttr('data-image', '#');
+              $full_page_background.fadeOut('fast');
+            }
+
+            background_image = false;
+          }
+        });
+
+        $('.switch-sidebar-mini input').change(function() {
+          $body = $('body');
+
+          $input = $(this);
+
+          if (md.misc.sidebar_mini_active == true) {
+            $('body').removeClass('sidebar-mini');
+            md.misc.sidebar_mini_active = false;
+
+            $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
+
+          } else {
+
+            $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
+
+            setTimeout(function() {
+              $('body').addClass('sidebar-mini');
+
+              md.misc.sidebar_mini_active = true;
+            }, 300);
+          }
+
+          // we simulate the window Resize so the charts will get updated in realtime.
+          var simulateWindowResize = setInterval(function() {
+            window.dispatchEvent(new Event('resize'));
+          }, 180);
+
+          // we stop the simulation of Window Resize after the animations are completed
+          setTimeout(function() {
+            clearInterval(simulateWindowResize);
+          }, 1000);
+
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
